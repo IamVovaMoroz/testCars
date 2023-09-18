@@ -1,16 +1,12 @@
+import React from 'react';
+import jsonData from '../../src/data/cars2.json';
+// import Car from './CarCard'; // Импортируем компонент Car
+import CarContainer from './CarContainer'; // Импортируем компонент CarContainer
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="App">
+      <CarContainer cars={jsonData} /> {/* Передаем массив машин в CarContainer */}
     </div>
   );
 };

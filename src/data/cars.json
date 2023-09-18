@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "year": 2022,
+        "make": "Buick",
+        "model": "Encore",
+        "type": "SUV",
+        "img": "https://example.com/buick_encore.jpg",
+        "description": "The Buick Encore is a compact SUV known for its elegant design and fuel efficiency.",
+        "fuelConsumption": "8.5",
+        "engineSize": "1.4L 4-cylinder",
+        "accessories": [
+            "Leather seats",
+            "Sunroof",
+            "Infotainment system"
+        ],
+        "functionalities": [
+            "Keyless entry",
+            "Rearview camera",
+            "Lane departure warning"
+        ],
+        "rentalPrice": "$45",
+        "rentalCompany": "Luxury Car Rentals",
+        "address": "123 Example Street, Los Angeles, USA",
+        "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+        "mileage": 1500
+    }, {
+        "id": 2,
+        "year": 2023,
+        "make": "Volvo",
+        "model": "XC90",
+        "type": "SUV",
+        "img": "https://example.com/volvo_xc90.jpg",
+        "description": "The Volvo XC90 is a luxury SUV known for its safety features and spacious interior.",
+        "fuelConsumption": "9.0",
+        "engineSize": "2.0L 4-cylinder",
+        "accessories": [
+            "Leather seats",
+            "Panoramic sunroof",
+            "Bowers & Wilkins sound system"
+        ],
+        "functionalities": [
+            "Adaptive cruise control",
+            "360-degree camera",
+            "Blind-spot monitoring"
+        ],
+        "rentalPrice": "$55",
+        "rentalCompany": "Volvo Rentals",
+        "address": "456 Sample Avenue, Stockholm, Sweden",
+        "rentalConditions": "Minimum age: 25\nValid driver's license\nNo smoking in the vehicle",
+        "mileage": 800
+    }
+]

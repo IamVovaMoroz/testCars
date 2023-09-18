@@ -1,0 +1,35 @@
+/* CarContainer.css */
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(4, 274px); /* 4 карточки в ширину */
+    grid-template-rows: repeat(3, 426px); /* 3 карточки в высоту */
+    gap: 16px; /* Расстояние между карточками */
+    width: 1184px; /* Width контейнера */
+    height: auto; /* Height автоматически подстраивается */
+    padding: 16px;
+  }
+  
+  .car-card {
+    /* Стили карточек, описанные в CarCard.css */
+  }
+  
+  /* Добавьте стили для кнопки и текста в низу карточки */
+  .car-button {
+    width: 274px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: #007bff; /* Цвет фона кнопки, можно настроить по своему */
+    color: #fff; /* Цвет текста кнопки */
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px; /* Расстояние от текста к кнопке */
+  }
+  
+  .car-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении курсора */
+  }
+  

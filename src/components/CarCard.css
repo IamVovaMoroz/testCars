@@ -1,0 +1,87 @@
+.car-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding: 16px;
+  }
+  
+  .car-image img {
+    border-radius: 14px;
+  }
+  
+  .car-details {
+    flex-grow: 1;
+    padding-left: 16px;
+  }
+  
+  .car-price {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+  
+  .car-location {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+  
+  .car-location span {
+    margin: 0 4px;
+  }
+  
+  .car-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .car-feature {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .car-description {
+    margin-top: 16px;
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .car-button {
+    width: 274px;
+    height: 44px;
+    border-radius: 12px;
+    padding: 0; /* Убираем внутренний отступ */
+    background-color: #007bff; /* Цвет фона кнопки, можно настроить по своему */
+    color: #fff; /* Цвет текста кнопки */
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px; /* Расстояние от текста к кнопке */
+    position: relative; /* Добавляем относительное позиционирование */
+  }
+  
+  
+  .car-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении курсора */
+  }
+
+  .car-button span {
+    font-size: 16px; /* Устанавливаем размер текста */
+    position: absolute; /* Абсолютное позиционирование для текста */
+    top: 50%; /* Размещаем текст по вертикали посередине */
+    left: 50%; /* Размещаем текст по горизонтали посередине */
+    transform: translate(-50%, -50%); /* Центрируем текст относительно родительского элемента */
+  }
