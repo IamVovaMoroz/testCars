@@ -73,7 +73,7 @@ const Modal = ({ isOpen, onClose, car }) => {
           </div>
         </div>
         <button className="modal-button" onClick={onClose}>
-          Закрыть
+          Rental car
         </button>
       </div>
     </div>

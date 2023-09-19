@@ -1018,7 +1018,9 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import './FilterForm.css'; // Импортируйте файл стилей
 
-const FilterForm = () => {
+
+
+const FilterForm = ({ onFilter }) => {
   const carBrands = [
     'Buick',
     'HUMMER',
@@ -1085,6 +1087,7 @@ const FilterForm = () => {
   const handleMileageToChange = (e) => {
     setMileageTo(e.target.value.replace(/[^0-9]/g, '')); // Убираем все символы, кроме цифр
   };
+  
 
   return (
     <div className="filter-form-container">
@@ -1115,7 +1118,7 @@ const FilterForm = () => {
         </div>
       </div>
       <div className="filter-input">
-        <label htmlFor="carMileageFrom">Mileage</label>
+        <label htmlFor="carMileageFrom">Car mileage / km</label>
         <div className="mileage-input">
           <input
             type="text"

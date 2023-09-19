@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
   
   .modal {
@@ -40,9 +40,7 @@
     height: 12px;
   }
   
-  .modal-content {
-    /* Стили для содержимого модального окна */
-  }
+ 
   
   .modal-button {
     width: 168px;
@@ -62,3 +60,10 @@
     background: #2054b7;
   }
   
+  .modal-car-image {
+    max-width: 100%; /* Максимальная ширина изображения будет равна ширине родительского контейнера */
+    max-height: 300px; /* Максимальная высота изображения */
+    display: block; /* Убедитесь, что изображение корректно отображается как блочный элемент */
+    margin: 10px;
+    
+  }

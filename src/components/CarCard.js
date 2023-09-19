@@ -198,6 +198,8 @@
 // };
 
 // export default CarCard;
+
+
 import React, { useState } from 'react';
 import './CarCard.css'; // Импортируем файл стилей
 import Modal from './Modal'; // Импортируем компонент Modal
