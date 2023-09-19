@@ -1,6 +1,6 @@
-.car-card {
+/* .car-card {
     display: flex;
-    flex-direction: column; /* Определяем направление флекс-контейнера */
+    flex-direction: column;
     width: 274px;
     height: 426px;
     gap: 28px;
@@ -14,14 +14,14 @@
   }
   
   .car-details {
-    flex-grow: 1; /* Заполняет доступное пространство */
+    flex-grow: 1;
   }
   
   .car-location,
   .car-features,
   .car-description {
     display: flex;
-    flex-direction: column; /* Определяем направление флекс-контейнера */
+    flex-direction: column; 
   }
   
   .car-button {
@@ -48,7 +48,79 @@
     font-size: 16px;
     position: absolute;
     top: 50%;
-    right: 16px; /* Располагаем символ справа */
+    right: 16px; 
+    transform: translateY(-50%);
+  }
+   */
+   .car-card {
+    display: flex;
+    flex-direction: column;
+    width: 274px;
+    height: 426px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px; /* Добавляем нижний отступ */
+  }
+  
+  .car-image img {
+    width: 274px;
+    height: 268px;
+    border-radius: 14px;
+  }
+  
+  .car-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .car-description {
+    margin-top: 8px;
+    flex-grow: 1;
+    overflow: hidden; /* Скрываем излишний текст */
+  }
+  
+  .car-description p {
+    margin: 0;
+  }
+  
+  .car-button {
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    padding: 0;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 1; /* Установим z-index, чтобы кнопка была выше текста */
+  }
+  
+  .car-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .car-button span {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
     transform: translateY(-50%);
   }
   

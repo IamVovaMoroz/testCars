@@ -12,7 +12,7 @@
 // };
 
 import React from 'react';
-import jsonData from '../../src/data/cars.json';
+import jsonData from '../../src/data/cars2.json';
 import CarContainer from './CarContainer';
 import FilterForm from './FilterForm';
 
@@ -23,6 +23,7 @@ export const App = () => {
     padding: '20px', // Отступы
     fontFamily: 'Arial, sans-serif', // Шрифт
   };
+  
 
   return (
     <div className="App" style={appStyles}>

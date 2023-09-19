@@ -8,6 +8,7 @@
     width: 1184px; /* Width контейнера */
     height: auto; /* Height автоматически подстраивается */
     padding: 16px;
+    align-content: space-between; /* Добавьте этот стиль для размещения элементов между карточками */
   }
   
  
@@ -29,4 +30,16 @@
   .car-button:hover {
     background-color: #0056b3; /* Цвет фона кнопки при наведении курсора */
   }
-  
+  .load-more-button {
+    width: 274px;
+    height: 44px;
+    border-radius: 12px;
+    background-color:  #0056b3; /* Цвет фона кнопки, можно настроить по своему */
+    color: #fff; /* Цвет текста кнопки */
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 38px; 
+  }

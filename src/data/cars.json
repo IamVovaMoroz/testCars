@@ -1,6 +1,6 @@
 [
     {
-        "id": 9587,
+        "id": 1001,
         "year": 2006,
         "make": "HUMMER",
         "model": "H2",
@@ -26,7 +26,7 @@
         "mileage": 4771
     },
     {
-        "id": 9590,
+        "id": 1002,
         "year": 2016,
         "make": "Subaru",
         "model": "Outback",
@@ -52,7 +52,7 @@
         "mileage": 4061
     },
     {
-        "id": 9591,
+        "id": 1003,
         "year": 2010,
         "make": "Mitsubishi",
         "model": "Outlander",
@@ -78,7 +78,7 @@
         "mileage": 5374
     },
     {
-        "id": 9593,
+        "id": 1004,
         "year": 2014,
         "make": "Nissan",
         "model": "Pathfinder",
