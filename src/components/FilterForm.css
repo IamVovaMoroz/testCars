@@ -1,0 +1,72 @@
+/* FilterForm.css */
+
+.filter-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 859px;
+    height: 74px;
+    margin: 0 auto;
+    gap: 32px;
+    background-color: #f7f7fb;
+    padding: 14px 89px 14px 18px;
+    border-radius: 14px;
+  }
+  
+  .filter-input {
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #121417;
+    height: 48px;
+    gap: 8px;
+  }
+  
+  .filter-input label {
+    margin-bottom: 4px;
+  }
+  
+  .mileage-input {
+    display: flex; /* Сделать поля "From" и "To" в одной строке */
+    gap: 8px;
+  }
+  
+  .mileage-input input {
+    padding: 8px;
+    border-radius: 14px;
+    border: 1px solid #ccc;
+    flex-grow: 1; /* Расширить поля "From" и "To" на всю доступную ширину */
+  }
+  
+  .filter-input select {
+    width: 160px;
+  }
+  
+  .search-button {
+    width: 136px;
+    height: 48px;
+    border-radius: 12px;
+    padding: 14px 44px;
+    background-color: #3470ff;
+    color: #fff;
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #2054b7;
+  }
+  
+  #carBrand {
+    height: 48px; /* Высота списка */
+    overflow-y: auto; /* Включение прокрутки, если элементов больше */
+    max-height: 9 * 48px; /* Максимальная высота списка, равная высоте 9 вариантов */
+    width: 224px; /* Ширина списка */
+  }
+  
