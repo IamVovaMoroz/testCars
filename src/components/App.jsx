@@ -120,7 +120,7 @@ export const App = () => {
   };
 
   return (
-    <BrowserRouter  basename="/testCars">
+<BrowserRouter >
       <div className='App' style={appStyles}>
         <div className='app-container'>
           <Navigation />
@@ -134,4 +134,3 @@ export const App = () => {
     </BrowserRouter>
   );
 };
-
