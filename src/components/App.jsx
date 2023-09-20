@@ -1,4 +1,36 @@
 
+// import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Home from './../pages/Home';
+// import Favorites from './../pages/Favorites';
+// import CarCatalog from './CarCatalog'; // Імпортуємо новий компонент
+// import Navigation from './Navigation';
+
+// export const App = () => {
+//   const appStyles = {
+//     display: 'flex',
+//     backgroundColor: 'lightgray',
+//     padding: '20px',
+//     fontFamily: 'Arial, sans-serif',
+//   };
+
+//   return (
+//     <BrowserRouter >
+// {/* <BrowserRouter basename="/testCars"> */}
+//       <div className='App' style={appStyles}>
+//         <div className='app-container'>
+//           <Navigation />
+//           <Routes>
+//             <Route path='/' element={<Home />} />
+//             <Route path='/catalog' element={<CarCatalog />} /> 
+//             <Route path='/favorites' element={<Favorites />} />
+//           </Routes>
+//         </div>
+//       </div>
+//     </BrowserRouter>
+//   );
+// };
+
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './../pages/Home';
@@ -30,7 +62,7 @@ export const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/testCars">
       <div className='App' style={appStyles}>
         <div className='app-container'>
           <Navigation />
