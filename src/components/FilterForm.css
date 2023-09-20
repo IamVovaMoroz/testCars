@@ -1,27 +1,24 @@
 /* FilterForm.css */
 
+
 .filter-form-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
     max-width: 100%;
     margin: 0 auto;
     gap: 32px;
-    position: absolute; /* Зробіть FilterForm абсолютно розташованим */
-    top: 0; /* Розташовуйте його вгорі контейнера */
-    left: 0; /* Розташовуйте його вліво контейнера */
-    background-color: #fff; /* Додайте фон FilterForm */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Установите правый отступ на 0, чтобы занять всю ширину экрана */
+    background-color: #fff;
     padding: 14px 18px;
     border-radius: 14px;
-    z-index: 1; /* Зробіть FilterForm вище карточок товарів */
+    z-index: 1;
+    margin-bottom: 160px; /* Отступ снизу на 20px */
   }
- 
-  
-  
-  
-  
-  
-  
   
   .filter-input {
     display: flex;
@@ -33,6 +30,7 @@
     color: #121417;
     height: 48px;
     gap: 8px;
+    width: 224px; /* Фиксированная ширина для select */
   }
   
   .filter-input label {
@@ -40,7 +38,7 @@
   }
   
   .mileage-input {
-    display: flex; /* Сделать поля "From" и "To" в одной строке */
+    display: flex;
     gap: 8px;
   }
   
@@ -48,11 +46,11 @@
     padding: 8px;
     border-radius: 14px;
     border: 1px solid #ccc;
-    flex-grow: 1; /* Расширить поля "From" и "To" на всю доступную ширину */
+    flex-grow: 1;
   }
   
   .filter-input select {
-    width: 160px;
+    flex-grow: 1; /* Займите всю доступную ширину контейнера */
   }
   
   .search-button {
@@ -71,12 +69,5 @@
   
   .search-button:hover {
     background-color: #2054b7;
-  }
-  
-  #carBrand {
-    height: 48px; /* Высота списка */
-    overflow-y: auto; /* Включение прокрутки, если элементов больше */
-    max-height: 9 * 48px; /* Максимальная высота списка, равная высоте 9 вариантов */
-    width: 224px; /* Ширина списка */
   }
   

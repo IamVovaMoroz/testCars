@@ -120,13 +120,14 @@ export const App = () => {
   };
 
   return (
-<BrowserRouter basename="/testCars">
+    <BrowserRouter basename="/testCars">
+{/* <BrowserRouter basename="/testCars"> */}
       <div className='App' style={appStyles}>
         <div className='app-container'>
           <Navigation />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/catalog' element={<CarCatalog />} /> {/* Змінено на CarCatalog */}
+            <Route path='/catalog' element={<CarCatalog />} /> 
             <Route path='/favorites' element={<Favorites />} />
           </Routes>
         </div>

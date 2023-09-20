@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import jsonData from '../../src/data/cars2.json';
 import CarContainer from './CarContainer';
-import FilterForm from './FilterForm';
+// import FilterForm from './FilterForm';
 
 const CarCatalog = () => {
   const [filterData, setFilterData] = useState({
