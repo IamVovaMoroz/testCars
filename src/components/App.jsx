@@ -120,7 +120,7 @@ export const App = () => {
   };
 
   return (
-<BrowserRouter >
+<BrowserRouter basename="/testCars">
       <div className='App' style={appStyles}>
         <div className='app-container'>
           <Navigation />
