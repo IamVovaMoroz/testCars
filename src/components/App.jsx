@@ -105,7 +105,7 @@
 //   );
 // };
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './../pages/Home';
 import Favorites from './../pages/Favorites';
 import CarCatalog from './CarCatalog'; // Імпортуємо новий компонент
@@ -120,10 +120,10 @@ export const App = () => {
   };
 
   return (
-    <Router>
+    <BrowserRouter  basename="/testCars">
       <div className='App' style={appStyles}>
         <div className='app-container'>
-        <Navigation /> 
+          <Navigation />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/catalog' element={<CarCatalog />} /> {/* Змінено на CarCatalog */}
@@ -131,8 +131,7 @@ export const App = () => {
           </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
-
 
