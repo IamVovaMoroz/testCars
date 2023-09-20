@@ -1,11 +1,11 @@
 
-
+import Modal from './Modal';
 import React, { useState } from 'react';
-import './CarCard.css'; // Импортируем файл стилей
-import Modal from './Modal'; // Импортируем компонент Modal
+import './CarCard.css'; 
 
 const CarCard = ({ car }) => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
   const openModal = () => {
     setModalOpen(true);
@@ -15,7 +15,11 @@ const CarCard = ({ car }) => {
     setModalOpen(false);
   };
 
-  const formattedPrice = car.rentalPrice.replace(' per day', ''); // Убираем "per day" из цены
+  const formattedPrice = car.rentalPrice.replace(' per day', '');
+
+  const toggleFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
 
   return (
     <div className="car-card">
@@ -26,7 +30,7 @@ const CarCard = ({ car }) => {
         <h2>{`${car.make}, ${car.model} ${formattedPrice}`}</h2>
         <div className="car-info">
           <div className="car-info-item">
-            {`${car.rentalCompany.split(' ')[0]}`} {/* Выводим первое слово из rentalCompany */}
+            {`${car.rentalCompany.split(' ')[0]}`} 
           </div>
           <div className="car-info-item">
             {`${car.type}`}
@@ -43,10 +47,14 @@ const CarCard = ({ car }) => {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
-        <button className="car-button" onClick={openModal}>
-          Learn more
-          <span>▶</span>
-        </button>
+        <div className="buttons-container">
+          <button className="car-button" onClick={openModal}>
+            Learn more
+          </button>
+          <button className={`favorite-button ${isFavorite ? 'favorite' : ''}`} onClick={toggleFavorite}>
+            {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+          </button>
+        </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} car={car} />
     </div>

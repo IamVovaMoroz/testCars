@@ -1,57 +1,4 @@
-/* .car-card {
-    display: flex;
-    flex-direction: column;
-    width: 274px;
-    height: 426px;
-    gap: 28px;
-    border: 1px solid #ccc;
-    border-radius: 14px;
-    padding: 16px;
-  }
-  
-  .car-image img {
-    border-radius: 14px;
-  }
-  
-  .car-details {
-    flex-grow: 1;
-  }
-  
-  .car-location,
-  .car-features,
-  .car-description {
-    display: flex;
-    flex-direction: column; 
-  }
-  
-  .car-button {
-    width: 274px;
-    height: 44px;
-    border-radius: 12px;
-    padding: 0;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8px;
-    position: relative;
-  }
-  
-  .car-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .car-button span {
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    right: 16px; 
-    transform: translateY(-50%);
-  }
-   */
+
    .car-card {
     display: flex;
     flex-direction: column;
@@ -122,5 +69,31 @@
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
+  }
+  
+/* Добавьте эти стили в ваш CSS файл */
+.favorite-button {
+    width: 40px; /* Уменьшаем ширину кнопки */
+    height: 40px; /* Уменьшаем высоту кнопки */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    padding: 0; /* Убираем внутренний отступ */
+    background-color: #ff5252;
+    color: #fff;
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 16px; /* Размещаем кнопку в верхнем углу */
+    right: 16px; /* Размещаем кнопку в правом углу */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Установим z-index, чтобы кнопка была выше фотографии */
+  }
+  
+  .favorite-button.favorite {
+    background-color: #3498db; /* Цвет фона для кнопки "Add to Favorites", если она в избранном */
   }
   
