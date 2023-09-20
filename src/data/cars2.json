@@ -305,7 +305,7 @@
             "Air suspension",
             "Automatic convertible roof"
         ],
-        "rentalPrice": "$150",
+        "rentalPrice": "$30",
         "rentalCompany": "Luxury Car Rentals",
         "address": "567 Example Street, Lviv, Ukraine",
         "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
@@ -331,7 +331,7 @@
             "Retractable hardtop roof",
             "Multi-contour seats"
         ],
-        "rentalPrice": "$75",
+        "rentalPrice": "$70",
         "rentalCompany": "Exquisite Car Rentals",
         "address": "789 Example Boulevard, Kyiv, Ukraine",
         "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
@@ -357,7 +357,7 @@
             "Carbon-fiber body panels",
             "Adaptive Damping System"
         ],
-        "rentalPrice": "$200",
+        "rentalPrice": "$100",
         "rentalCompany": "Supreme Car Rentals",
         "address": "123 Example Avenue, Odessa, Ukraine",
         "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
@@ -409,7 +409,7 @@
             "Electronic Stability Control",
             "Retractable soft-top roof"
         ],
-        "rentalPrice": "$500",
+        "rentalPrice": "$100",
         "rentalCompany": "Supercar Rentals",
         "address": "321 Example Road, Kharkiv, Ukraine",
         "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
@@ -435,7 +435,7 @@
             "Quattro all-wheel drive available",
             "Power-folding acoustic soft-top"
         ],
-        "rentalPrice": "$150",
+        "rentalPrice": "$50",
         "rentalCompany": "Luxury Car Rentals",
         "address": "987 Example Lane, Dnipro, Ukraine",
         "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
@@ -461,7 +461,7 @@
             "Dynamic Stability Control",
             "Power-operated soft-top roof"
         ],
-        "rentalPrice": "$300",
+        "rentalPrice": "$100",
         "rentalCompany": "Classic Car Rentals",
         "address": "654 Example Circle, Zaporizhzhia, Ukraine",
         "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
@@ -487,7 +487,7 @@
             "Limited-slip differential",
             "Power-operated convertible top"
         ],
-        "rentalPrice": "$200",
+        "rentalPrice": "$50",
         "rentalCompany": "Muscle Car Rentals",
         "address": "123 Example Street, Lviv, Ukraine",
         "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
@@ -513,7 +513,7 @@
             "Dynamic Stability Control",
             "Retractable hardtop roof"
         ],
-        "rentalPrice": "$250",
+        "rentalPrice": "$80",
         "rentalCompany": "Luxury Car Rentals",
         "address": "456 Example Avenue, Kyiv, Ukraine",
         "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",

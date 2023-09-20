@@ -3,14 +3,14 @@
 .car-container {
     display: grid;
     grid-template-columns: repeat(4, 274px); /* 4 карточки в ширину */
-    grid-template-rows: repeat(3, 426px); /* 3 карточки в высоту */
-    gap: 16px; /* Расстояние между карточками */
-    width: 1184px; /* Width контейнера */
-    height: auto; /* Height автоматически подстраивается */
+    grid-template-rows: repeat(3, 426px); /* 3 карточки в висоту */
+    gap: 16px; /* Розсташування між карточками */
+    width: 1184px; /* Ширина контейнера */
+    height: auto; /* Висота автоматично підлаштовується */
     padding: 16px;
-    align-content: space-between; /* Добавьте этот стиль для размещения элементов между карточками */
+    align-content: space-between; /* Додайте цей стиль для розташування елементів між карточками */
+    position: relative; /* Додайте це, щоб можливо позиціонувати FilterForm */
   }
-  
  
   /* Добавьте стили для кнопки и текста в низу карточки */
   .car-button {

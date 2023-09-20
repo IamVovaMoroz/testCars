@@ -4,13 +4,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%; 
+    max-width: 100%;
     margin: 0 auto;
     gap: 32px;
-    /* background-color: #f7f7fb; */
-    padding: 14px 18px; 
+    position: absolute; /* Зробіть FilterForm абсолютно розташованим */
+    top: 0; /* Розташовуйте його вгорі контейнера */
+    left: 0; /* Розташовуйте його вліво контейнера */
+    background-color: #fff; /* Додайте фон FilterForm */
+    padding: 14px 18px;
     border-radius: 14px;
+    z-index: 1; /* Зробіть FilterForm вище карточок товарів */
   }
+ 
+  
+  
+  
+  
+  
+  
   
   .filter-input {
     display: flex;
