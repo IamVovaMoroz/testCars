@@ -1,5 +1,8 @@
 import React from 'react';
 
+import myImage from './../salon.jpg'; // Импорт изображения
+
+
 const Home = () => {
   const containerStyle = {
     display: 'flex',
@@ -27,6 +30,7 @@ const Home = () => {
          meetings, we have the right option for you. Use filters to
          customize your search and find the perfect car for your needs.
       </p>
+      <img src={myImage} alt="Car Catalog Cover" />
     </div>
   );
 };
