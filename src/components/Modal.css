@@ -1,5 +1,4 @@
 /* Modal.css */
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -14,9 +13,8 @@
 }
 
 .modal {
-  max-width: 841px;
- 
-  max-height: 1200px; /* Максимальная высота контейнера */
+  max-width: 80%; /* Максимальная ширина модалки (80% от ширины экрана) */
+  max-height: 80vh; /* Максимальная высота модалки (80% от высоты экрана) */
   background: #fff;
   border-radius: 24px;
   position: relative;
