@@ -1,38 +1,31 @@
+/* Navigation.css */
+
 nav {
-    background-color: #333;
-    color: white;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  li {
-    margin-right: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
- 
-  a.active {
-    background-color: white;
-    color: #333;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  .active-link {
-    font-weight: bold; 
-    color: blue;
-  }
+  background-color: #000; /* Задаем черный фон */
+  padding: 16px; /* Добавляем внутренний отступ для кнопок */
+}
+
+ul {
+  list-style-type: none; /* Убираем стандартные маркеры списка */
+  padding: 0;
+  display: flex; /* Делаем элементы списка горизонтальными */
+  justify-content: center; /* Выравниваем элементы по центру */
+}
+
+li {
+  margin: 0 16px; /* Добавляем отступ между элементами */
+}
+
+.active-link {
+  text-decoration: none; /* Убираем подчеркивание у активной ссылки */
+  color: #fff; /* Задаем цвет текста для активной ссылки */
+  font-weight: bold; /* Делаем текст жирным для активной ссылки */
+  font-size: 18px; /* Задаем размер шрифта */
+  transition: color 0.3s; /* Плавное изменение цвета текста при наведении */
+}
+
+.active-link:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.94);
+  background-color: rgb(25, 34, 31);
+  border-radius: 50%;
+}

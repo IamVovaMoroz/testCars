@@ -4,8 +4,9 @@ const Favorites = () => {
   const containerStyle = {
     width: '100%',
     maxWidth: '100%',
-    padding: '20px', 
+    padding: '20px',
     boxSizing: 'border-box',
+    textAlign: 'center',
   };
 
   const headingStyle = {
@@ -16,7 +17,7 @@ const Favorites = () => {
   return (
     <div style={containerStyle}>
       <h1 style={headingStyle}>Your Favorite Listings</h1>
-    
+  
     </div>
   );
 };

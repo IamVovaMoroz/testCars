@@ -1,9 +1,11 @@
 
+  
+
    .car-card {
     display: flex;
     flex-direction: column;
     width: 274px;
-    height: 426px;
+    height: 376px;
     border: 1px solid #ccc;
     border-radius: 14px;
     padding: 16px;
@@ -12,88 +14,40 @@
     margin-bottom: 16px; /* Добавляем нижний отступ */
   }
   
-  .car-image img {
-    width: 274px;
-    height: 268px;
-    border-radius: 14px;
-  }
+
   
-  .car-details {
+  /* .car-details {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
+  } */
+   
   .car-info {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .car-info-item {
+    white-space: nowrap;
+    margin-right: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 8px); /* Учитываем отступ справа */
+    box-sizing: border-box;
   }
   
   .car-description {
     margin-top: 8px;
     flex-grow: 1;
-    overflow: hidden; /* Скрываем излишний текст */
+    overflow: hidden; 
   }
   
-  .car-description p {
-    margin: 0;
-  }
-  
-  .car-button {
-    width: 100%;
-    height: 44px;
-    border-radius: 12px;
-    padding: 0;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    z-index: 1; /* Установим z-index, чтобы кнопка была выше текста */
-  }
+
   
   .car-button:hover {
     background-color: #0056b3;
   }
   
-  .car-button span {
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
-  }
-  
-/* Добавьте эти стили в ваш CSS файл */
-.favorite-button {
-    width: 40px; /* Уменьшаем ширину кнопки */
-    height: 40px; /* Уменьшаем высоту кнопки */
-    border-radius: 50%; /* Делаем кнопку круглой */
-    padding: 0; /* Убираем внутренний отступ */
-    background-color: #ff5252;
-    color: #fff;
-    font-family: Manrope;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 16px; /* Размещаем кнопку в верхнем углу */
-    right: 16px; /* Размещаем кнопку в правом углу */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; /* Установим z-index, чтобы кнопка была выше фотографии */
-  }
-  
-  .favorite-button.favorite {
-    background-color: #3498db; /* Цвет фона для кнопки "Add to Favorites", если она в избранном */
-  }
-  
+ 

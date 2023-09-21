@@ -1,45 +1,101 @@
 /* CarContainer.css */
 
 .car-container {
-    display: grid;
-    grid-template-columns: repeat(4, 274px); 
-    grid-template-rows: repeat(3, 426px); 
-    gap: 16px; /* Розсташування між карточками */
-  
-    height: auto;
-    padding: 16px;
-    align-content: space-between;
-    position: relative; /* можливо позиціонувати FilterForm */
-  }
+  display: grid;
+  width: 98%;
+  grid-template-columns: repeat(4, 1fr); /* 4 карточки в ширину */
+  grid-template-rows: repeat(2, auto); /* 2 карточки в высоту */
+  gap: 16px; /* Расстояние между карточками */
+  padding: 16px;
+
+
+
+}
+
+
+
+
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+
+  /* position: relative; */
+  overflow: hidden;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.car-image img {
+  width: 100%;
+
+  height: 300px;
+  border-radius: 14px;
+}
+
+
+.load-more-button{
+  width: 250px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #2b05e7bc;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 52px;
+}
+
+
+
+
+/* CarCard.css */
+
+.car-button {
+ 
+  width: 250px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 35px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
  
 
-  .car-button {
-    width: 274px;
-    height: 44px;
-    border-radius: 12px;
-    background-color: #007bff; 
-    color: #fff; 
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8px;
-  }
-  
-  .car-button:hover {
-    background-color: #0056b3; 
-  }
-  .load-more-button {
-    width: 274px;
-    height: 44px;
-    border-radius: 12px;
-    background-color:  #0056b3; 
-    color: #fff; 
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 38px; 
-  }
+}
+
+
+.car-button:hover {
+  background-color: #0056b3;
+}
+
+.favorite-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #ff5252;
+  color: #fff;
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.favorite-button.favorite {
+  background-color: #3498db;
+}
+

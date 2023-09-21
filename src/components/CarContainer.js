@@ -72,10 +72,11 @@ const CarContainer = ({ cars, onFilter }) => {
     setCarsToShow(carsToShow + 8);
   };
 
-  return (
+  return (<>
+    <FilterForm onFilter={onFilter} />
     <div className='car-container'>
       {/* Передача onFilter до FilterForm */}
-      <FilterForm onFilter={onFilter} />
+      
       {cars.slice(0, carsToShow).map((car, index) => (
         <CarCard key={index} car={car} />
       ))}
@@ -84,7 +85,7 @@ const CarContainer = ({ cars, onFilter }) => {
           Load more
         </button>
       )}
-    </div>
+    </div></>
   );
 };
 

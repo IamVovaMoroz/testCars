@@ -42,17 +42,17 @@ const CarCard = ({ car }) => {
             {`${car.functionalities.join(', ')}`}
           </div>
         </div>
-        <div className="car-description">
+        {/* <div className="car-description">
           {car.description.split('\n').map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-        </div>
+        </div> */}
         <div className="buttons-container">
           <button className="car-button" onClick={openModal}>
             Learn more
           </button>
           <button className={`favorite-button ${isFavorite ? 'favorite' : ''}`} onClick={toggleFavorite}>
-            {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+            {isFavorite ? 'Remove' : 'Add '}
           </button>
         </div>
       </div>

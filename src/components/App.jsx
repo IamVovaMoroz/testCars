@@ -43,6 +43,8 @@ export const App = () => {
 
   const appStyles = {
     display: 'flex',
+    flexDirection: "column",
+
     backgroundColor: 'lightgray',
     padding: '20px',
     fontFamily: 'Arial, sans-serif',
