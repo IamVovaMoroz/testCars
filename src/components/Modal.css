@@ -14,7 +14,7 @@
 }
 
 .modal {
-  width: 741px;
+  max-width: 841px;
  
   max-height: 1200px; /* Максимальная высота контейнера */
   background: #fff;
