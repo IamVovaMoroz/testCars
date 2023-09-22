@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import Select from 'react-select';
-import './FilterForm.css'; // Импортируйте файл стилей
+import './FilterForm.css';
 
 const FilterForm = ({ onFilter }) => {
   const carBrands = [
@@ -39,24 +38,32 @@ const FilterForm = ({ onFilter }) => {
   const [mileageFrom, setMileageFrom] = useState('');
   const [mileageTo, setMileageTo] = useState('');
 
-  const handleBrandChange = selectedOption => {
+  const handleBrandChange = (selectedOption) => {
     setSelectedBrand(selectedOption);
   };
 
-  const handleMileageFromChange = e => {
-    setMileageFrom(e.target.value.replace(/[^0-9]/g, ''));
+  const formatNumberWithCommas = (value) => {
+    return value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   };
 
-  const handleMileageToChange = e => {
-    setMileageTo(e.target.value.replace(/[^0-9]/g, ''));
+  const handleMileageFromChange = (e) => {
+    const rawValue = e.target.value.replace(/[^0-9]/g, '');
+    const formattedValue = formatNumberWithCommas(rawValue);
+    setMileageFrom(formattedValue);
+  };
+
+  const handleMileageToChange = (e) => {
+    const rawValue = e.target.value.replace(/[^0-9]/g, '');
+    const formattedValue = formatNumberWithCommas(rawValue);
+    setMileageTo(formattedValue);
   };
 
   const handleFilterClick = () => {
     const filters = {
       brand: selectedBrand ? selectedBrand.value : null,
-      price: null, // Устанавливаем price в null, чтобы игнорировать его выбор
-      mileageFrom: mileageFrom,
-      mileageTo: mileageTo,
+      price: null,
+      mileageFrom: parseInt(mileageFrom.replace(/,/g, '')),
+      mileageTo: parseInt(mileageTo.replace(/,/g, '')),
     };
     onFilter(filters);
   };
@@ -66,7 +73,7 @@ const FilterForm = ({ onFilter }) => {
       <div className='filter-input'>
         <label htmlFor='carBrand'>Car brand</label>
         <Select
-          options={carBrands.map(brand => ({ value: brand, label: brand }))}
+          options={carBrands.map((brand) => ({ value: brand, label: brand }))}
           defaultValue={{
             value: 'Enter the text',
             label: 'Enter the text',
