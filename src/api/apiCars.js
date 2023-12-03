@@ -37,7 +37,7 @@
 //     .catch((error) => {
 //       console.error(error);
 //     });
-  
+  // 
 async function fetchCarData() {
   try {
     const reqOptions = {
